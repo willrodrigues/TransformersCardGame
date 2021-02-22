@@ -54,7 +54,9 @@ final class TransformerViewCard: UIView {
         textf.layer.cornerRadius = 10
         textf.textAlignment = .center
         textf.font = .boldSystemFont(ofSize: 20)
-        textf.delegate = self
+        textf.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        textf.addDoneButtonOnKeyboard()
+        textf.autocorrectionType = .no
         return textf
     }()
     
@@ -298,18 +300,18 @@ final class TransformerViewCard: UIView {
         overallRating.isHidden = isEditing
     }
     
+    // MARK: - TextView Functions
+    
+    @objc private func textFieldDidChange(_ textField: UITextField) {
+        transformer?.name = (textField.text?.capitalized) ?? ""
+    }
+    
     // MARK: - Public Functions
     
     public func setup(transformer: Global.Model.Transformer?, isEditing: Bool, showEditButton: Bool = false) {
         self.transformer = transformer != nil ? transformer : Global.Model.Transformer()
         setEditingMode(isEditing)
         editOptions.isHidden = !showEditButton
-    }
-}
-
-extension TransformerViewCard: UITextFieldDelegate {
-    func textFieldDidChangeSelection(_ textField: UITextField) {
-        transformer?.name = (textField.text?.capitalized) ?? ""
     }
 }
 
