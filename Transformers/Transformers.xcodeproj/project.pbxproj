@@ -1,0 +1,918 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE23C37C25DC561A0076FAD7 /* TransformerAttributeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE23C37B25DC561A0076FAD7 /* TransformerAttributeView.swift */; };
+		BE23C38125DC57260076FAD7 /* TransformerViewCardModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE23C38025DC57260076FAD7 /* TransformerViewCardModels.swift */; };
+		BE37F3E525E31AEC0076B19D /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37F3E125E31AEC0076B19D /* HomeViewControllerTests.swift */; };
+		BE37F3E625E31AEC0076B19D /* HomeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37F3E225E31AEC0076B19D /* HomeInteractorTests.swift */; };
+		BE37F3E825E31AEC0076B19D /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37F3E425E31AEC0076B19D /* HomePresenterTests.swift */; };
+		BE37F3EF25E31B520076B19D /* HomePresentationLogicSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37F3EE25E31B520076B19D /* HomePresentationLogicSpy.swift */; };
+		BE37F3F525E31E4E0076B19D /* HomeWorkerLogicMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37F3F425E31E4E0076B19D /* HomeWorkerLogicMock.swift */; };
+		BE37F3F925E333500076B19D /* HomeBusinessLogicSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37F3F825E333500076B19D /* HomeBusinessLogicSpy.swift */; };
+		BE37F42F25E33C5E0076B19D /* HomeDisplayLogicSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37F42E25E33C5E0076B19D /* HomeDisplayLogicSpy.swift */; };
+		BE42E1FE25D984F600CA0F4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42E1FD25D984F600CA0F4D /* AppDelegate.swift */; };
+		BE42E20725D984F800CA0F4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE42E20625D984F800CA0F4D /* Assets.xcassets */; };
+		BE42E20A25D984F800CA0F4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE42E20825D984F800CA0F4D /* LaunchScreen.storyboard */; };
+		BE42E21525D984F900CA0F4D /* TransformersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42E21425D984F900CA0F4D /* TransformersTests.swift */; };
+		BE42E22025D984F900CA0F4D /* TransformersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42E21F25D984F900CA0F4D /* TransformersUITests.swift */; };
+		BE42E26425D98FAE00CA0F4D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42E26325D98FAE00CA0F4D /* Constants.swift */; };
+		BE42E29325D996D900CA0F4D /* APIService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE42E29225D996D900CA0F4D /* APIService.framework */; };
+		BE42E29425D996D900CA0F4D /* APIService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE42E29225D996D900CA0F4D /* APIService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE42E2A225D99B3300CA0F4D /* LauchScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42E29C25D99B3300CA0F4D /* LauchScreenRouter.swift */; };
+		BE42E2A425D99B3300CA0F4D /* LauchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42E29E25D99B3300CA0F4D /* LauchScreenViewController.swift */; };
+		BE42E2B125D9A0D700CA0F4D /* ViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42E2B025D9A0D700CA0F4D /* ViewController+Extensions.swift */; };
+		BE42E2BC25D9A78400CA0F4D /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42E2B625D9A78400CA0F4D /* HomePresenter.swift */; };
+		BE42E2BD25D9A78400CA0F4D /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42E2B725D9A78400CA0F4D /* HomeWorker.swift */; };
+		BE42E2BE25D9A78400CA0F4D /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42E2B825D9A78400CA0F4D /* HomeRouter.swift */; };
+		BE42E2BF25D9A78400CA0F4D /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42E2B925D9A78400CA0F4D /* HomeModels.swift */; };
+		BE42E2C025D9A78400CA0F4D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42E2BA25D9A78400CA0F4D /* HomeViewController.swift */; };
+		BE42E2C125D9A78400CA0F4D /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42E2BB25D9A78400CA0F4D /* HomeInteractor.swift */; };
+		BE42E2C825D9A95900CA0F4D /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42E2C725D9A95900CA0F4D /* String+Extensions.swift */; };
+		BE42E2CE25D9A99B00CA0F4D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE42E2CD25D9A99B00CA0F4D /* Localizable.strings */; };
+		BE42E2E025D9B80800CA0F4D /* TransformerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42E2DF25D9B80800CA0F4D /* TransformerCell.swift */; };
+		BE42E2E625D9BA8100CA0F4D /* GlobalModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42E2E525D9BA8100CA0F4D /* GlobalModels.swift */; };
+		BE42E2EA25D9BE3000CA0F4D /* HomeRequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42E2E925D9BE3000CA0F4D /* HomeRequestProvider.swift */; };
+		BEAACC0F25DC6B9F001FAB85 /* TransformerDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAACC0E25DC6B9F001FAB85 /* TransformerDetailsRouter.swift */; };
+		BEAACC1325DD4AA8001FAB85 /* TransformerTeamOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAACC1225DD4AA8001FAB85 /* TransformerTeamOptions.swift */; };
+		BEAACC1725DD5E66001FAB85 /* TransformerEditOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAACC1625DD5E66001FAB85 /* TransformerEditOptions.swift */; };
+		BEAACC2B25DD9494001FAB85 /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAACC2A25DD9494001FAB85 /* Encodable+Extensions.swift */; };
+		BEAACC3A25DDCCFA001FAB85 /* ScrollableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAACC3925DDCCFA001FAB85 /* ScrollableViewController.swift */; };
+		BEC4611425DC31F1007C36E6 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4611325DC31F1007C36E6 /* Array+Extensions.swift */; };
+		BEC4614B25DC334A007C36E6 /* TransformerDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4614525DC334A007C36E6 /* TransformerDetailsPresenter.swift */; };
+		BEC4614C25DC334A007C36E6 /* TransformerDetailsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4614625DC334A007C36E6 /* TransformerDetailsWorker.swift */; };
+		BEC4614E25DC334A007C36E6 /* TransformerDetailsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4614825DC334A007C36E6 /* TransformerDetailsModels.swift */; };
+		BEC4614F25DC334A007C36E6 /* TransformerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4614925DC334A007C36E6 /* TransformerDetailsViewController.swift */; };
+		BEC4615025DC334A007C36E6 /* TransformerDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4614A25DC334A007C36E6 /* TransformerDetailsInteractor.swift */; };
+		BEC4615925DC404E007C36E6 /* TransformerViewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4615825DC404E007C36E6 /* TransformerViewCard.swift */; };
+		BECE7DE525DDE52F00FD7CC8 /* TransformerViewAttributedButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECE7DE425DDE52F00FD7CC8 /* TransformerViewAttributedButtons.swift */; };
+		BECE7DEB25DDF02800FD7CC8 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECE7DEA25DDF02800FD7CC8 /* UITextField+Extensions.swift */; };
+		BECE7DFC25DDF35900FD7CC8 /* UpdateTransformerRequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECE7DF925DDF35900FD7CC8 /* UpdateTransformerRequestProvider.swift */; };
+		BECE7DFD25DDF35900FD7CC8 /* AddTransformerRequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECE7DFA25DDF35900FD7CC8 /* AddTransformerRequestProvider.swift */; };
+		BECE7DFE25DDF35900FD7CC8 /* DeleteTransformerRequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECE7DFB25DDF35900FD7CC8 /* DeleteTransformerRequestProvider.swift */; };
+		BECE7E0225DDFBC300FD7CC8 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECE7E0125DDFBC300FD7CC8 /* UIView+Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE42E21125D984F900CA0F4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE42E1F225D984F600CA0F4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE42E1F925D984F600CA0F4D;
+			remoteInfo = Transformers;
+		};
+		BE42E21C25D984F900CA0F4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE42E1F225D984F600CA0F4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE42E1F925D984F600CA0F4D;
+			remoteInfo = Transformers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE42E29525D996D900CA0F4D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BE42E29425D996D900CA0F4D /* APIService.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BE23C37B25DC561A0076FAD7 /* TransformerAttributeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerAttributeView.swift; sourceTree = "<group>"; };
+		BE23C38025DC57260076FAD7 /* TransformerViewCardModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerViewCardModels.swift; sourceTree = "<group>"; };
+		BE37F3E125E31AEC0076B19D /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
+		BE37F3E225E31AEC0076B19D /* HomeInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorTests.swift; sourceTree = "<group>"; };
+		BE37F3E425E31AEC0076B19D /* HomePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
+		BE37F3EE25E31B520076B19D /* HomePresentationLogicSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresentationLogicSpy.swift; sourceTree = "<group>"; };
+		BE37F3F425E31E4E0076B19D /* HomeWorkerLogicMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkerLogicMock.swift; sourceTree = "<group>"; };
+		BE37F3F825E333500076B19D /* HomeBusinessLogicSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBusinessLogicSpy.swift; sourceTree = "<group>"; };
+		BE37F42E25E33C5E0076B19D /* HomeDisplayLogicSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDisplayLogicSpy.swift; sourceTree = "<group>"; };
+		BE42E1FA25D984F600CA0F4D /* Transformers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transformers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE42E1FD25D984F600CA0F4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE42E20625D984F800CA0F4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE42E20925D984F800CA0F4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE42E20B25D984F800CA0F4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE42E21025D984F900CA0F4D /* TransformersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransformersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE42E21425D984F900CA0F4D /* TransformersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformersTests.swift; sourceTree = "<group>"; };
+		BE42E21625D984F900CA0F4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE42E21B25D984F900CA0F4D /* TransformersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransformersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE42E21F25D984F900CA0F4D /* TransformersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformersUITests.swift; sourceTree = "<group>"; };
+		BE42E22125D984F900CA0F4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE42E26325D98FAE00CA0F4D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BE42E29225D996D900CA0F4D /* APIService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = APIService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE42E29C25D99B3300CA0F4D /* LauchScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauchScreenRouter.swift; sourceTree = "<group>"; };
+		BE42E29E25D99B3300CA0F4D /* LauchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauchScreenViewController.swift; sourceTree = "<group>"; };
+		BE42E2B025D9A0D700CA0F4D /* ViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extensions.swift"; sourceTree = "<group>"; };
+		BE42E2B625D9A78400CA0F4D /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		BE42E2B725D9A78400CA0F4D /* HomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
+		BE42E2B825D9A78400CA0F4D /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		BE42E2B925D9A78400CA0F4D /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
+		BE42E2BA25D9A78400CA0F4D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BE42E2BB25D9A78400CA0F4D /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		BE42E2C725D9A95900CA0F4D /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		BE42E2CD25D9A99B00CA0F4D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		BE42E2DF25D9B80800CA0F4D /* TransformerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerCell.swift; sourceTree = "<group>"; };
+		BE42E2E525D9BA8100CA0F4D /* GlobalModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalModels.swift; sourceTree = "<group>"; };
+		BE42E2E925D9BE3000CA0F4D /* HomeRequestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRequestProvider.swift; sourceTree = "<group>"; };
+		BEAACC0E25DC6B9F001FAB85 /* TransformerDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerDetailsRouter.swift; sourceTree = "<group>"; };
+		BEAACC1225DD4AA8001FAB85 /* TransformerTeamOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerTeamOptions.swift; sourceTree = "<group>"; };
+		BEAACC1625DD5E66001FAB85 /* TransformerEditOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerEditOptions.swift; sourceTree = "<group>"; };
+		BEAACC2A25DD9494001FAB85 /* Encodable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extensions.swift"; sourceTree = "<group>"; };
+		BEAACC3925DDCCFA001FAB85 /* ScrollableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableViewController.swift; sourceTree = "<group>"; };
+		BEC4611325DC31F1007C36E6 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		BEC4614525DC334A007C36E6 /* TransformerDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerDetailsPresenter.swift; sourceTree = "<group>"; };
+		BEC4614625DC334A007C36E6 /* TransformerDetailsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerDetailsWorker.swift; sourceTree = "<group>"; };
+		BEC4614825DC334A007C36E6 /* TransformerDetailsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerDetailsModels.swift; sourceTree = "<group>"; };
+		BEC4614925DC334A007C36E6 /* TransformerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerDetailsViewController.swift; sourceTree = "<group>"; };
+		BEC4614A25DC334A007C36E6 /* TransformerDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerDetailsInteractor.swift; sourceTree = "<group>"; };
+		BEC4615825DC404E007C36E6 /* TransformerViewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerViewCard.swift; sourceTree = "<group>"; };
+		BECE7DE425DDE52F00FD7CC8 /* TransformerViewAttributedButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerViewAttributedButtons.swift; sourceTree = "<group>"; };
+		BECE7DEA25DDF02800FD7CC8 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		BECE7DF925DDF35900FD7CC8 /* UpdateTransformerRequestProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateTransformerRequestProvider.swift; sourceTree = "<group>"; };
+		BECE7DFA25DDF35900FD7CC8 /* AddTransformerRequestProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTransformerRequestProvider.swift; sourceTree = "<group>"; };
+		BECE7DFB25DDF35900FD7CC8 /* DeleteTransformerRequestProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteTransformerRequestProvider.swift; sourceTree = "<group>"; };
+		BECE7E0125DDFBC300FD7CC8 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE42E1F725D984F600CA0F4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE42E29325D996D900CA0F4D /* APIService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE42E20D25D984F900CA0F4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE42E21825D984F900CA0F4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE23C37F25DC57090076FAD7 /* TransformerViewCard */ = {
+			isa = PBXGroup;
+			children = (
+				BECE7E0525DE958F00FD7CC8 /* Views */,
+				BEC4615825DC404E007C36E6 /* TransformerViewCard.swift */,
+				BE23C38025DC57260076FAD7 /* TransformerViewCardModels.swift */,
+			);
+			path = TransformerViewCard;
+			sourceTree = "<group>";
+		};
+		BE37F3DF25E31A8C0076B19D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BE37F3E025E31A920076B19D /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		BE37F3E025E31A920076B19D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BE37F43225E33C840076B19D /* Mock */,
+				BE37F3ED25E31AF90076B19D /* Spies */,
+				BE37F3E125E31AEC0076B19D /* HomeViewControllerTests.swift */,
+				BE37F3E225E31AEC0076B19D /* HomeInteractorTests.swift */,
+				BE37F3E425E31AEC0076B19D /* HomePresenterTests.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BE37F3ED25E31AF90076B19D /* Spies */ = {
+			isa = PBXGroup;
+			children = (
+				BE37F3EE25E31B520076B19D /* HomePresentationLogicSpy.swift */,
+				BE37F3F825E333500076B19D /* HomeBusinessLogicSpy.swift */,
+				BE37F42E25E33C5E0076B19D /* HomeDisplayLogicSpy.swift */,
+			);
+			path = Spies;
+			sourceTree = "<group>";
+		};
+		BE37F43225E33C840076B19D /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				BE37F3F425E31E4E0076B19D /* HomeWorkerLogicMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		BE42E1F125D984F600CA0F4D = {
+			isa = PBXGroup;
+			children = (
+				BE42E1FC25D984F600CA0F4D /* Transformers */,
+				BE42E21325D984F900CA0F4D /* TransformersTests */,
+				BE42E21E25D984F900CA0F4D /* TransformersUITests */,
+				BE42E1FB25D984F600CA0F4D /* Products */,
+				BE42E29125D996D900CA0F4D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE42E1FB25D984F600CA0F4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE42E1FA25D984F600CA0F4D /* Transformers.app */,
+				BE42E21025D984F900CA0F4D /* TransformersTests.xctest */,
+				BE42E21B25D984F900CA0F4D /* TransformersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE42E1FC25D984F600CA0F4D /* Transformers */ = {
+			isa = PBXGroup;
+			children = (
+				BEC4615725DC403D007C36E6 /* Components */,
+				BE42E24025D9861700CA0F4D /* Scenes */,
+				BE42E23925D985A000CA0F4D /* SupportingFiles */,
+				BE42E23725D9857F00CA0F4D /* Global */,
+				BE42E23625D9856F00CA0F4D /* Extensions */,
+			);
+			path = Transformers;
+			sourceTree = "<group>";
+		};
+		BE42E21325D984F900CA0F4D /* TransformersTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE37F3DF25E31A8C0076B19D /* Scenes */,
+				BE42E21425D984F900CA0F4D /* TransformersTests.swift */,
+				BE42E21625D984F900CA0F4D /* Info.plist */,
+			);
+			path = TransformersTests;
+			sourceTree = "<group>";
+		};
+		BE42E21E25D984F900CA0F4D /* TransformersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE42E21F25D984F900CA0F4D /* TransformersUITests.swift */,
+				BE42E22125D984F900CA0F4D /* Info.plist */,
+			);
+			path = TransformersUITests;
+			sourceTree = "<group>";
+		};
+		BE42E23625D9856F00CA0F4D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BE42E2B025D9A0D700CA0F4D /* ViewController+Extensions.swift */,
+				BE42E2C725D9A95900CA0F4D /* String+Extensions.swift */,
+				BEC4611325DC31F1007C36E6 /* Array+Extensions.swift */,
+				BEAACC2A25DD9494001FAB85 /* Encodable+Extensions.swift */,
+				BECE7DEA25DDF02800FD7CC8 /* UITextField+Extensions.swift */,
+				BECE7E0125DDFBC300FD7CC8 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BE42E23725D9857F00CA0F4D /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				BE42E26325D98FAE00CA0F4D /* Constants.swift */,
+				BE42E2E525D9BA8100CA0F4D /* GlobalModels.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		BE42E23925D985A000CA0F4D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				BE42E20625D984F800CA0F4D /* Assets.xcassets */,
+				BE42E1FD25D984F600CA0F4D /* AppDelegate.swift */,
+				BE42E20825D984F800CA0F4D /* LaunchScreen.storyboard */,
+				BE42E20B25D984F800CA0F4D /* Info.plist */,
+				BE42E2CD25D9A99B00CA0F4D /* Localizable.strings */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		BE42E24025D9861700CA0F4D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BEB8643525DC1F9A001E2A38 /* TransformerDetails */,
+				BE42E24A25D986C700CA0F4D /* Home */,
+				BE42E24125D9861C00CA0F4D /* LaunchScreen */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		BE42E24125D9861C00CA0F4D /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BE42E29C25D99B3300CA0F4D /* LauchScreenRouter.swift */,
+				BE42E29E25D99B3300CA0F4D /* LauchScreenViewController.swift */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		BE42E24A25D986C700CA0F4D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BE42E2DE25D9B7EA00CA0F4D /* Views */,
+				BE42E2C625D9A87300CA0F4D /* Requests */,
+				BE42E2B625D9A78400CA0F4D /* HomePresenter.swift */,
+				BE42E2B725D9A78400CA0F4D /* HomeWorker.swift */,
+				BE42E2B825D9A78400CA0F4D /* HomeRouter.swift */,
+				BE42E2B925D9A78400CA0F4D /* HomeModels.swift */,
+				BE42E2BA25D9A78400CA0F4D /* HomeViewController.swift */,
+				BE42E2BB25D9A78400CA0F4D /* HomeInteractor.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BE42E29125D996D900CA0F4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE42E29225D996D900CA0F4D /* APIService.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE42E2C625D9A87300CA0F4D /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				BE42E2E925D9BE3000CA0F4D /* HomeRequestProvider.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		BE42E2DE25D9B7EA00CA0F4D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE42E2DF25D9B80800CA0F4D /* TransformerCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BEAACC3825DDCCD8001FAB85 /* ScrollableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BEAACC3925DDCCFA001FAB85 /* ScrollableViewController.swift */,
+			);
+			path = ScrollableViewController;
+			sourceTree = "<group>";
+		};
+		BEB8643525DC1F9A001E2A38 /* TransformerDetails */ = {
+			isa = PBXGroup;
+			children = (
+				BECE7DF825DDF35900FD7CC8 /* Requests */,
+				BEC4614525DC334A007C36E6 /* TransformerDetailsPresenter.swift */,
+				BEC4614625DC334A007C36E6 /* TransformerDetailsWorker.swift */,
+				BEC4614825DC334A007C36E6 /* TransformerDetailsModels.swift */,
+				BEC4614925DC334A007C36E6 /* TransformerDetailsViewController.swift */,
+				BEC4614A25DC334A007C36E6 /* TransformerDetailsInteractor.swift */,
+				BEAACC0E25DC6B9F001FAB85 /* TransformerDetailsRouter.swift */,
+			);
+			path = TransformerDetails;
+			sourceTree = "<group>";
+		};
+		BEC4615725DC403D007C36E6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BEAACC3825DDCCD8001FAB85 /* ScrollableViewController */,
+				BE23C37F25DC57090076FAD7 /* TransformerViewCard */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BECE7DF825DDF35900FD7CC8 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				BECE7DF925DDF35900FD7CC8 /* UpdateTransformerRequestProvider.swift */,
+				BECE7DFA25DDF35900FD7CC8 /* AddTransformerRequestProvider.swift */,
+				BECE7DFB25DDF35900FD7CC8 /* DeleteTransformerRequestProvider.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		BECE7E0525DE958F00FD7CC8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE23C37B25DC561A0076FAD7 /* TransformerAttributeView.swift */,
+				BECE7DE425DDE52F00FD7CC8 /* TransformerViewAttributedButtons.swift */,
+				BEAACC1225DD4AA8001FAB85 /* TransformerTeamOptions.swift */,
+				BEAACC1625DD5E66001FAB85 /* TransformerEditOptions.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE42E1F925D984F600CA0F4D /* Transformers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE42E22425D984F900CA0F4D /* Build configuration list for PBXNativeTarget "Transformers" */;
+			buildPhases = (
+				BE42E1F625D984F600CA0F4D /* Sources */,
+				BE42E1F725D984F600CA0F4D /* Frameworks */,
+				BE42E1F825D984F600CA0F4D /* Resources */,
+				BE42E29525D996D900CA0F4D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Transformers;
+			productName = Transformers;
+			productReference = BE42E1FA25D984F600CA0F4D /* Transformers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE42E20F25D984F900CA0F4D /* TransformersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE42E22725D984F900CA0F4D /* Build configuration list for PBXNativeTarget "TransformersTests" */;
+			buildPhases = (
+				BE42E20C25D984F900CA0F4D /* Sources */,
+				BE42E20D25D984F900CA0F4D /* Frameworks */,
+				BE42E20E25D984F900CA0F4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE42E21225D984F900CA0F4D /* PBXTargetDependency */,
+			);
+			name = TransformersTests;
+			productName = TransformersTests;
+			productReference = BE42E21025D984F900CA0F4D /* TransformersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE42E21A25D984F900CA0F4D /* TransformersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE42E22A25D984F900CA0F4D /* Build configuration list for PBXNativeTarget "TransformersUITests" */;
+			buildPhases = (
+				BE42E21725D984F900CA0F4D /* Sources */,
+				BE42E21825D984F900CA0F4D /* Frameworks */,
+				BE42E21925D984F900CA0F4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE42E21D25D984F900CA0F4D /* PBXTargetDependency */,
+			);
+			name = TransformersUITests;
+			productName = TransformersUITests;
+			productReference = BE42E21B25D984F900CA0F4D /* TransformersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE42E1F225D984F600CA0F4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					BE42E1F925D984F600CA0F4D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					BE42E20F25D984F900CA0F4D = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = BE42E1F925D984F600CA0F4D;
+					};
+					BE42E21A25D984F900CA0F4D = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = BE42E1F925D984F600CA0F4D;
+					};
+				};
+			};
+			buildConfigurationList = BE42E1F525D984F600CA0F4D /* Build configuration list for PBXProject "Transformers" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE42E1F125D984F600CA0F4D;
+			productRefGroup = BE42E1FB25D984F600CA0F4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE42E1F925D984F600CA0F4D /* Transformers */,
+				BE42E20F25D984F900CA0F4D /* TransformersTests */,
+				BE42E21A25D984F900CA0F4D /* TransformersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE42E1F825D984F600CA0F4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE42E20A25D984F800CA0F4D /* LaunchScreen.storyboard in Resources */,
+				BE42E2CE25D9A99B00CA0F4D /* Localizable.strings in Resources */,
+				BE42E20725D984F800CA0F4D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE42E20E25D984F900CA0F4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE42E21925D984F900CA0F4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE42E1F625D984F600CA0F4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC4614C25DC334A007C36E6 /* TransformerDetailsWorker.swift in Sources */,
+				BECE7DFE25DDF35900FD7CC8 /* DeleteTransformerRequestProvider.swift in Sources */,
+				BE42E2A225D99B3300CA0F4D /* LauchScreenRouter.swift in Sources */,
+				BE42E2EA25D9BE3000CA0F4D /* HomeRequestProvider.swift in Sources */,
+				BECE7DEB25DDF02800FD7CC8 /* UITextField+Extensions.swift in Sources */,
+				BE42E2C125D9A78400CA0F4D /* HomeInteractor.swift in Sources */,
+				BEC4614B25DC334A007C36E6 /* TransformerDetailsPresenter.swift in Sources */,
+				BECE7E0225DDFBC300FD7CC8 /* UIView+Extensions.swift in Sources */,
+				BEAACC1725DD5E66001FAB85 /* TransformerEditOptions.swift in Sources */,
+				BE42E2BF25D9A78400CA0F4D /* HomeModels.swift in Sources */,
+				BE42E2BD25D9A78400CA0F4D /* HomeWorker.swift in Sources */,
+				BE42E2C825D9A95900CA0F4D /* String+Extensions.swift in Sources */,
+				BE42E1FE25D984F600CA0F4D /* AppDelegate.swift in Sources */,
+				BECE7DFD25DDF35900FD7CC8 /* AddTransformerRequestProvider.swift in Sources */,
+				BECE7DFC25DDF35900FD7CC8 /* UpdateTransformerRequestProvider.swift in Sources */,
+				BE42E2A425D99B3300CA0F4D /* LauchScreenViewController.swift in Sources */,
+				BE23C38125DC57260076FAD7 /* TransformerViewCardModels.swift in Sources */,
+				BEC4614E25DC334A007C36E6 /* TransformerDetailsModels.swift in Sources */,
+				BEAACC0F25DC6B9F001FAB85 /* TransformerDetailsRouter.swift in Sources */,
+				BE23C37C25DC561A0076FAD7 /* TransformerAttributeView.swift in Sources */,
+				BE42E2C025D9A78400CA0F4D /* HomeViewController.swift in Sources */,
+				BE42E2E025D9B80800CA0F4D /* TransformerCell.swift in Sources */,
+				BEC4615925DC404E007C36E6 /* TransformerViewCard.swift in Sources */,
+				BEAACC1325DD4AA8001FAB85 /* TransformerTeamOptions.swift in Sources */,
+				BE42E2BC25D9A78400CA0F4D /* HomePresenter.swift in Sources */,
+				BEC4611425DC31F1007C36E6 /* Array+Extensions.swift in Sources */,
+				BE42E2BE25D9A78400CA0F4D /* HomeRouter.swift in Sources */,
+				BEAACC2B25DD9494001FAB85 /* Encodable+Extensions.swift in Sources */,
+				BECE7DE525DDE52F00FD7CC8 /* TransformerViewAttributedButtons.swift in Sources */,
+				BEC4615025DC334A007C36E6 /* TransformerDetailsInteractor.swift in Sources */,
+				BEAACC3A25DDCCFA001FAB85 /* ScrollableViewController.swift in Sources */,
+				BE42E2B125D9A0D700CA0F4D /* ViewController+Extensions.swift in Sources */,
+				BE42E26425D98FAE00CA0F4D /* Constants.swift in Sources */,
+				BEC4614F25DC334A007C36E6 /* TransformerDetailsViewController.swift in Sources */,
+				BE42E2E625D9BA8100CA0F4D /* GlobalModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE42E20C25D984F900CA0F4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE37F3E625E31AEC0076B19D /* HomeInteractorTests.swift in Sources */,
+				BE42E21525D984F900CA0F4D /* TransformersTests.swift in Sources */,
+				BE37F3F525E31E4E0076B19D /* HomeWorkerLogicMock.swift in Sources */,
+				BE37F3F925E333500076B19D /* HomeBusinessLogicSpy.swift in Sources */,
+				BE37F3E825E31AEC0076B19D /* HomePresenterTests.swift in Sources */,
+				BE37F42F25E33C5E0076B19D /* HomeDisplayLogicSpy.swift in Sources */,
+				BE37F3E525E31AEC0076B19D /* HomeViewControllerTests.swift in Sources */,
+				BE37F3EF25E31B520076B19D /* HomePresentationLogicSpy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE42E21725D984F900CA0F4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE42E22025D984F900CA0F4D /* TransformersUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE42E21225D984F900CA0F4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE42E1F925D984F600CA0F4D /* Transformers */;
+			targetProxy = BE42E21125D984F900CA0F4D /* PBXContainerItemProxy */;
+		};
+		BE42E21D25D984F900CA0F4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE42E1F925D984F600CA0F4D /* Transformers */;
+			targetProxy = BE42E21C25D984F900CA0F4D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE42E20825D984F800CA0F4D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE42E20925D984F800CA0F4D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE42E22225D984F900CA0F4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE42E22325D984F900CA0F4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE42E22525D984F900CA0F4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Z62BC38DU;
+				INFOPLIST_FILE = Transformers/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.willrodrigues.Transformers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE42E22625D984F900CA0F4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Z62BC38DU;
+				INFOPLIST_FILE = Transformers/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.willrodrigues.Transformers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE42E22825D984F900CA0F4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J559KFBN8S;
+				INFOPLIST_FILE = TransformersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.willrodrigues.TransformersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Transformers.app/Transformers";
+			};
+			name = Debug;
+		};
+		BE42E22925D984F900CA0F4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J559KFBN8S;
+				INFOPLIST_FILE = TransformersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.willrodrigues.TransformersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Transformers.app/Transformers";
+			};
+			name = Release;
+		};
+		BE42E22B25D984F900CA0F4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J559KFBN8S;
+				INFOPLIST_FILE = TransformersUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.willrodrigues.TransformersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Transformers;
+			};
+			name = Debug;
+		};
+		BE42E22C25D984F900CA0F4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J559KFBN8S;
+				INFOPLIST_FILE = TransformersUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.willrodrigues.TransformersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Transformers;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE42E1F525D984F600CA0F4D /* Build configuration list for PBXProject "Transformers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE42E22225D984F900CA0F4D /* Debug */,
+				BE42E22325D984F900CA0F4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE42E22425D984F900CA0F4D /* Build configuration list for PBXNativeTarget "Transformers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE42E22525D984F900CA0F4D /* Debug */,
+				BE42E22625D984F900CA0F4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE42E22725D984F900CA0F4D /* Build configuration list for PBXNativeTarget "TransformersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE42E22825D984F900CA0F4D /* Debug */,
+				BE42E22925D984F900CA0F4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE42E22A25D984F900CA0F4D /* Build configuration list for PBXNativeTarget "TransformersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE42E22B25D984F900CA0F4D /* Debug */,
+				BE42E22C25D984F900CA0F4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE42E1F225D984F600CA0F4D /* Project object */;
+}

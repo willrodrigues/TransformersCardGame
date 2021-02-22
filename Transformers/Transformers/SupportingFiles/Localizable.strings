@@ -1,0 +1,56 @@
+/* 
+  Localizable.strings
+  Transformers
+
+  Created by Willian Rodrigues on 14/02/21.
+  
+*/
+
+"home.title" = "You have %d cards";
+"home.titleOne" = "You have 1 card";
+
+"home.notransformers.title" = "You have no cards yet, tap add button to create a new transform's card";
+"home.addButton" = "Create Transformer";
+"home.warButton" = "Start a War";
+"home.battleResult.title" = "Battle Summary";
+"home.battleResult.button" = "Ok";
+"home.battleResult.criticalMessage" = "Oh No!, We had a critital battle where Optimus Prime fought with Predaking and every one has been destroyed.";
+"home.battleResult.noWinner" = "We had %d battle(s), but unfortunately we don't have any winner for this war!";
+"home.battleResult.numberOfBattles" = "We had %d battle(s)";
+"home.battleResult.winnerTeam" = "\n%@ team won this war";
+"home.battleResult.championTransformers" = "\nWinners: %@";
+"home.battleResult.losingSurvivorsTeam" = "\nLoosing survivors from team (%@)";
+"home.battleResult.losingSurvivorsName" =": %@";
+
+"keyboardDoneButton" = "Done";
+
+"teamName.autobots" = "Autobots";
+"teamName.accessibility.autobots" = "Red Autobots Image";
+"teamName.decepticons" = "Decepticons";
+"teamName.accessibility.decepticons" = "Purple Decepticons Image";
+"teamName.unknown" = "Unknown";
+"teamName.accessibility.unknown" = "No image team selected yet";
+
+"transformerDetails.overallRating" = "Overall Rating: %d";
+"transformerDetails.invalidTransformer.title" = "Ops!";
+"transformerDetails.invalidTransformer.message" = "Please, Make sure the transformer's name and team has been fullfilled.";
+"transformerDetails.invalidTransformer.button" = "Ok";
+
+"transformerAttributePropertie.skill" = "Skill";
+"transformerAttributePropertie.courage" = "Courage";
+"transformerAttributePropertie.endurance" = "Endurance";
+"transformerAttributePropertie.firepower" = "Firepower";
+"transformerAttributePropertie.intelligente" = "Intelligente";
+"transformerAttributePropertie.speed" = "Speed";
+"transformerAttributePropertie.strength" = "Strength";
+"transformerAttributePropertie.rank" = "Rank";
+"transformerAttributePropertie.team" = "Team";
+
+"transformerEditOptions.saveButton" = "Save";
+"transformerEditOptions.deleteButton" = "Delete";
+"transformerEditOptions.editButton" = "Edit";
+
+"accessibility.noImageDescription" = "I'm sorry, this image has no description yet.";
+"accessibility.noDescription" = "I'm sorry, this item has no description yet.";
+"accessibility.activityIndicator" = "Animate spinner in the middle of screen which indicates that It's processing the last request yet.";
+"accessibility.homeTableView" = "TableView which list all transformer's card";
