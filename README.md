@@ -5,6 +5,7 @@ This is a Swift project which uses the below technologies and concepts:
 * Internationalization
 * Modularization concept for the Service API
 * Accessibility
+* Unit Tests
 
 ## Getting Started
 
